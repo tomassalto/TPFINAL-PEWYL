@@ -16,6 +16,7 @@
         <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/modonoc.css">
         <link rel="shortcut icon" href="./imagenes/Gamer Compra (1).png">
     <title>¿Quienes Somos?</title>
 </head>
@@ -24,7 +25,10 @@
     <header>
         <h1 id="titular">GamerCompra</h1>
         <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button> 
-   
+        <button class="switch" id="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+      </button>         
     </header>
     <div id="menu">
         <ul>
@@ -69,6 +73,7 @@
         </div>
         <script src="./js/modal.js"></script>
         <script src="./js/localstorage.js" defer></script>
+        <script src="./js/modonoc.js"></script>
 </body>
 
 </html>

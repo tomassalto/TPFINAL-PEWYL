@@ -74,6 +74,9 @@
     border:rgb(26, 25, 25);
   }
 
+  body.dark .parrafo{
+    color: white;
+  }
   body.dark #selecTipo option{
     background-color: rgb(26, 25, 25);
     color: rgb(225, 76, 65);
