@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/modonoc.css">
+        <link rel="shortcut icon" href="./imagenes/Gamer Compra (1).png">
+        
+        
+        
+        <title>GamerCompra</title>
+
+        
+    </head>
+    <body>
+        <header>
+            <h1 id="titular">GamerCompra</h1>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+            <button class="switch" id="switch">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+          </button>         
+        </header>
+     
+        <div id="menu">
+            <ul>
+              <a href="./index.html"><li>Inicio</li></a>
+              <a href="./quienessomos.html"><li>¿Quienes Somos?</li></a>
+              <a href="./contacto.html"><li>Contacto</li></a>
+              <a href="./sponsors.html"><li>Sponsors</li></a>
+                
+            </ul>
+          </div>
+      
+        <select id="selecTipo" class="content-select" aria-label="Default select example">
+            
+            <option value="all">Todos</option>
+            <option value="p">Placas</option>
+            <option value="m">Monitores</option>
+            <option value="pe">Perifericos</option>
+          </select>
+
+          <div id="somos-proya" class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2 id="sponsor">Catalogo</h2>
+                
+            </div>
+        </div>
+
+        <main id="contenedor-productos">
+
+        </main>
+<!--  -->
+      
+
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
+                     <!-- <div class="productoEnCarrito">
+                        <p>Buzo 1</p>
+                        <p>Precio: $1200</p>
+                        <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                    </div>  -->
+                </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+
+                <form action="payout.html">
+                    <button id="botoncito" type="submit" class="btn btn-outline-primary">Comprar</button>
+                  </form>
+                                
+            </div>
+        </div>
+                 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/array.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/nuevo.js"></script>
+        <script src="./js/modonoc.js"></script>
+       
+
+
+
+    </body>
+</html>
